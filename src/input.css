@@ -1,0 +1,27 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base{
+    body{
+        background: url(images/bg-pattern.svg);
+        background: no-repeat;
+        background-size: 800px;
+        background-position: 90% -25%;
+    }
+
+    .get-started{
+        background: url(images/bg-destop-pattern.svg);
+        background:no-repeat ;
+    }
+    @media (max-width:569px) {
+        body{
+            background-position: 50px -50px;
+            background-size: 500px;
+        }  
+        
+        .get-started{
+            background: url(images/bg-mobile\ pattern.svg);
+        }
+    }
+}
